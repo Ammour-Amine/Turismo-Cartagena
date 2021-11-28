@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8f3e8;
+    color: #1F313D;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+
+}
+
+li {
+	text-decoration: none;
+	list-style: none;
+}
+
+/*Empieza el Header*/
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #6C1313;
+    padding: 0.5rem 2rem;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    padding: 1rem 1.5rem;
+    flex: auto;
+    text-align: center;
+}
+
+#logo img {
+    height: 70px;
+}
+
+header nav ul li a {
+    color: #E2D2B3;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+header nav ul li:hover {
+    text-decoration: underline;
+    color: #1F313D;
+    background-color: #E2D2B3;
+}
+
+header nav ul li:hover a{
+    color: #1F313D;
+}
+
+/*Termina el Header*/
+
+/*Empieza La primera sección*/
+
+.primera_seccion {
+
+    background-image: url(../img/cartagena7.jpeg);
+    height: 35rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.primera_seccion #texto-opacite {
+    background-color: rgba(0, 0, 0, 0.445);
+    max-width: 50rem;
+    text-align: center;
+    margin-left: 2rem;
+    padding: 4rem 1rem;
+}
+
+#texto_primera_seccion {
+    display: block;
+    font-size: 3rem;
+    color: #fff;
+    max-width: 50rem;
+}
+
+#button_reserva {
+    display: flex;
+    justify-content: end;
+}
+
+.primera_seccion button {
+    display: flex;
+    margin: 2rem;
+    padding: 1rem 3rem;
+    background-color: #E2D2B3;
+    color: #1F313D;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    transition: 0.3s;
+}
+
+.primera_seccion button:hover {
+    color: #6C1313;
+    cursor: pointer;
+}
+/*Termina La primera sección*/
+
+/*Empieza La Segunda sección*/
+
+.segunda_seccion {
+    background-image: url(../img/cartagena6.jpeg);
+    height: 35rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.texto_segunda_seccion {
+    background-color: #e2d2b39c;
+    margin: 2rem;
+    padding: 2rem;
+    max-height: 35rem;
+    overflow: auto;
+}
+
+#titulo_segunda_seccion {
+
+    font-size: 3rem;
+    margin-bottom: 4rem;
+}
+
+#texto_segunda_seccion {
+
+    line-height: 3rem;
+    overflow: auto;
+}
+/*Termina La Segunda sección*/
+
+/*Empieza La Tercera sección*/
+
+.tersera_seccion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5efe3;
+    padding: 2rem;
+}
+
+.tersera_seccion h2 {
+    font-size: 3rem;
+    color: #1F313D;
+    margin: 2rem;
+}
+
+.tersera_seccion img {
+    height: 15rem;
+    width: 15rem;
+    padding-bottom: 1rem;
+    transition: 0.3s;
+}
+
+.tersera_seccion img:hover {
+    height: 16rem;
+    width: 16rem;
+    cursor: pointer;
+}
+
+.restaurantes {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.hoteles {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+/*Termina La tercera sección*/
+
+/*Empieza La sección de contacto*/
+
+#contact_seccion {
+    background-image: url(../img/contact.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 35rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #E2D2B3;
+}
+
+#contact_titulo{
+    margin: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.cuadro_contact {
+    background-color: #6C1313;
+    min-width: 30rem;
+    width: auto;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    color: #E2D2B3;
+    padding: 2rem;
+}
+
+#nombre_email {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#nombre {
+    display: flex;
+    flex-direction: column;
+}
+
+#nombre input {
+    width: 16.5rem;
+    height: 2rem;
+    background-color: transparent;
+    border-color: #E2D2B3;
+    border-width: 1px;
+    border-style: solid;
+    margin-right: 0.5rem;
+    padding-left: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: #E2D2B3;
+}
+
+#email {
+    display: flex;
+    flex-direction: column;
+}
+
+#email input {
+    width: 16.5rem;
+    height: 2rem;
+    background-color: transparent;
+    border-color: #E2D2B3;
+    border-width: 1px;
+    border-style: solid;
+    padding-left: 1rem;
+    margin-top: 1rem;
+    color: #E2D2B3;
+}
+
+::placeholder{
+    color: #E2D2B3;
+}
+
+#mensaje {
+    display: flex;
+    flex-direction: column;
+}
+
+#mensaje label {
+    margin-top: 2rem;
+}
+
+textarea {
+    margin: 1rem 0 1rem 0;
+    background-color: transparent;
+    color: #E2D2B3;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    font-family: 'Inter', sans-serif;
+    background-color: transparent;
+    border-color: #E2D2B3;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.bt_form {
+    display: flex;
+    justify-content: end;
+}
+
+.button_form {
+    padding: 0.5rem 2rem;
+    color: #6C1313;
+    background-color: #E2D2B3;
+    transition: 0.3s;
+}
+
+.button_form:hover {
+    cursor: pointer;
+    background-color:#1F313D;
+    color: #E2D2B3;
+}
+
+/*Termina La sección de contacto*/
+
+/*Empieza el footer*/
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: #6C1313;
+    align-items: center;
+    color: #E2D2B3;
+}
+
+i {
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+
+i:hover {
+    background-color: #1F313D;
+    cursor: pointer;
+}
+
+/*Termina el footer*/
